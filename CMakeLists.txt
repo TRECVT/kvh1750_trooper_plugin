@@ -6,7 +6,7 @@ project(kvh1750_trooper_plugin)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   pluginlib
-  ros_kvh1750
+  kvh1750
   roscpp
   trooper_mlc_msgs
 )
@@ -103,7 +103,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES kvh1750_trooper_plugin
- CATKIN_DEPENDS pluginlib ros_kvh1750 roscpp trooper_mlc_msgs
+ CATKIN_DEPENDS pluginlib kvh1750 roscpp trooper_mlc_msgs
 #  DEPENDS system_lib
 )
 
