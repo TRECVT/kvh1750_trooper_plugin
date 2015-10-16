@@ -103,7 +103,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES kvh1750_trooper_plugin
-#  CATKIN_DEPENDS pluginlib ros_kvh1750 roscpp trooper_mlc_msgs
+ CATKIN_DEPENDS pluginlib ros_kvh1750 roscpp trooper_mlc_msgs
 #  DEPENDS system_lib
 )
 
@@ -113,7 +113,7 @@ catkin_package(
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
-# include_directories(include)
+include_directories(include)
 include_directories(
   ${catkin_INCLUDE_DIRS}
 )
@@ -139,6 +139,7 @@ include_directories(
 # target_link_libraries(kvh1750_trooper_plugin_node
 #   ${catkin_LIBRARIES}
 # )
+add_library(kvh1750_trooper src/kvh1750_trooper.cpp)
 
 #############
 ## Install ##

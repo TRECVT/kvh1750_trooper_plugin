@@ -1,0 +1,5 @@
+<library path="lib/libkvh1750_trooper">
+  <class type="kvh1750::TrooperProcessor" base_class_type="kvh::MessageProcessorBase">
+    <description>Creates CachedRawImuMessages.</description>
+  </class>
+</library>
