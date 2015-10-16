@@ -21,7 +21,7 @@ class TrooperProcessor : public kvh::MessageProcessorBase
 {
 public:
   TrooperProcessor();
-  virtual ~TrooperProcessor() {};
+  virtual ~TrooperProcessor();
 
   virtual void process_message(const kvh::Message& msg);
 

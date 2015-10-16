@@ -53,8 +53,8 @@ void TrooperProcessor::process_message(const kvh::Message& msg)
 
   if(_counter >= _cache_size)
   {
-    msg.time(cached_imu.header.stamp.sec, cached_imu.header.stamp.nsec);
-    cache_pub.publish(_cached_msg);
+    msg.time(_cached_msg.header.stamp.sec, _cached_msg.header.stamp.nsec);
+    _pub.publish(_cached_msg);
   }
 }
 
