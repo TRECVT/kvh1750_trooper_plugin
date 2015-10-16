@@ -3,7 +3,7 @@
  * \author: Jason Ziglar <jpz@vt.edu>
  * \date: 10/16/2015
  */
-#include "kvh1750_trooper/kvh_trooper.h"
+#include "kvh1750_trooper/kvh1750_trooper.h"
 
 namespace
 {
