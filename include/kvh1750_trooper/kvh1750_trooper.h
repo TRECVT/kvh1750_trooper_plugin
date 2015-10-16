@@ -8,7 +8,11 @@
 
 #include "kvh1750/kvh_plugin.h"
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wshadow"
+#include <ros/ros.h>
 #include <trooper_mlc_msgs/CachedRawIMUData.h>
+#pragma GCC diagnostic pop
 
 namespace kvh1750
 {

@@ -5,6 +5,8 @@
  */
 #include "kvh1750_trooper/kvh1750_trooper.h"
 
+#include <pluginlib/class_list_macros.h>
+
 namespace
 {
   const size_t ImuCacheSize = 15;
