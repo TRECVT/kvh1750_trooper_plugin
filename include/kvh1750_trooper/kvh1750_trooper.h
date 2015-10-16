@@ -24,6 +24,7 @@ public:
   virtual ~TrooperProcessor();
 
   virtual void process_message(const kvh::Message& msg);
+  virtual void set_link_name(const std::string& link);
 
   static const size_t DefaultCacheSize = 15;
 

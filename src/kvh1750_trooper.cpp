@@ -17,8 +17,7 @@ namespace kvh1750
 
 TrooperProcessor::TrooperProcessor() :
   _cache_size(TrooperProcessor::DefaultCacheSize),
-  _counter(0),
-  _cache(_cache_size)
+  _counter(0)
 {
   ros::NodeHandle nh = ros::NodeHandle("~");
   _pub = nh.advertise<trooper_mlc_msgs::CachedRawIMUData>("cached", 1);
@@ -34,7 +33,6 @@ TrooperProcessor::~TrooperProcessor()
  */
 void TrooperProcessor::process_message(const kvh::Message& msg)
 {
-  _cached_msg.header.frame_id = msg.header.frame_id;
   trooper_mlc_msgs::RawIMUData imu;
   uint32_t secs = 0;
   uint32_t nsecs = 0;
@@ -56,6 +54,11 @@ void TrooperProcessor::process_message(const kvh::Message& msg)
     msg.time(_cached_msg.header.stamp.sec, _cached_msg.header.stamp.nsec);
     _pub.publish(_cached_msg);
   }
+}
+
+void TrooperProcessor::set_link_name(const std::string& link)
+{
+  _cached_msg.header.frame_id = link;
 }
 
 }
