@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>kvh1750_trooper_plugin</name>
-  <version>0.0.1</version>
+  <version>1.0.0</version>
   <description>The kvh1750_trooper_plugin package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
@@ -14,7 +14,6 @@
   <!-- Commonly used license strings: -->
   <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
   <license>BSD</license>
-
 
   <!-- Url tags are optional, but mutiple are allowed, one per tag -->
   <!-- Optional attribute type can be: website, bugtracker, or repository -->
