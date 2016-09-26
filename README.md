@@ -1,6 +1,6 @@
 # Trooper Plugin
 
-This repository contains a [ROS](http://www.ros.org) plugin for the [KVH1750](https://github.com/TRECVT/ros_kvh1750) node, which accumulates individual IMU messages into the RawCachedIMUData available as part of the [pronto](https://github.com/ipab-slmc/pronto-distro) package, and required for getting that package to work on robots which have a KVH 1750, but are not an ATLAS.
+This repository contains a [ROS](http://www.ros.org) plugin for the [KVH1750](https://github.com/jasedit/ros_kvh1750) node, which accumulates individual IMU messages into the RawCachedIMUData available as part of the [pronto](https://github.com/ipab-slmc/pronto-distro) package, and required for getting that package to work on robots which have a KVH 1750, but are not an ATLAS.
 
 # Installation
 
